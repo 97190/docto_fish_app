@@ -1,6 +1,9 @@
 <h1>Home page Docto.fish</h1>
 
-<form action="/"></form>
+<form action="/cardsfishs" method="get">
+<input type="text" name="fishes" placeholder="Trouver mon poisson">
+<input type="submit">
+</form>
 
+<% fishes = [ 'poisson clown', 'poisson rouge', 'poisson tête de lion', 'guppy'] %>
 
-<%= link_to "Nos services", service_path %>
