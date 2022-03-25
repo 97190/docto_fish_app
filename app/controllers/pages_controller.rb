@@ -5,4 +5,7 @@ class PagesController < ApplicationController
 
   def service
   end
+
+  def dashboard
+  end
 end
