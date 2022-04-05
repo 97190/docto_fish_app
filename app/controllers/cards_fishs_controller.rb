@@ -5,4 +5,5 @@ class CardsFishsController < ApplicationController
 
   def show
   end
+  
 end
