@@ -2,16 +2,25 @@
 <html>
   <head>
     <title>DoctoFishApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+  <header>
+  <nav>
   <h2>navbar</h2> <!-- Add this -->
+      <% if user_signed_in? %>
+        <%= link_to 'Changement de profil', edit_user_registration_path %>
+        <%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete %>
+    <% else %>
+        <%= link_to "S'inscrire", new_user_registration_path %>
+        <%= link_to "S'identifier", new_user_session_path %>
+        <% end %>
+    </nav>
+  </header>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
     <%= yield %>

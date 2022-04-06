@@ -2,7 +2,7 @@
 
 
 <% if user_signed_in? %>
-<p>Bonjour, ravie de te revoir <%= current_user.name %></p>
+<p>Bonjour, ravie de te revoir <%= current_user.email %></p>
 <% end %>
 <form action="/cardsfishs" method="get">
 <input type="text" name="fishes" placeholder="Trouver mon poisson">
