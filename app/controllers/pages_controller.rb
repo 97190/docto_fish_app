@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  skip_before_action :authenticate_user!, only: :home
 
   def home
     # @fishes = [ 'poisson rouge', 'guppy', 'poisson à tête de lion' ]
