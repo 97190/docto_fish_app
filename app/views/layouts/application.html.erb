@@ -10,15 +10,16 @@
   </head>
   <body>
   <header>
-  <nav>
-  <h2>navbar</h2> <!-- Add this -->
-    
-    </nav>
+  <%# <nav> %>
+  <%# <h2>navbar</h2> <!-- Add this -->
+
+    </nav> %>
   </header>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <%= render 'layouts/navigation' %>
     <%= yield %>
 
+<p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
     <p>Build footer here</p> <!-- Add this -->
   </body>
 </html>
