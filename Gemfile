@@ -30,6 +30,12 @@ gem "jbuilder"
 # Devise
 gem 'devise'
 
+# Bootstrap 3 for Sass
+gem 'bootstrap-sass', '~> 3.4.1'
+
+# Jquery-rails
+gem 'jquery-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
