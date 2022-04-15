@@ -1,4 +1,6 @@
 <div class="center container">
+<% name = current_user.present? ? current_user.email : "Bonjour"  %>
+<h1>Bonjour, <%= current_user.email %></h1>
   <h1>Home page Docto.fish</h1>
 
   <%# <%= link_to "S'inscrire", new_user_registration_path %>
