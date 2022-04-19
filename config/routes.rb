@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   # resources :sessions
 
   devise_scope :user do
-  get 'users/sign_out', to: 'sessions#destroy'
+  get 'users/sign_out', to: 'users/sessions#destroy'
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
