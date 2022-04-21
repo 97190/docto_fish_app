@@ -1,0 +1,2 @@
+class CardFish < ApplicationRecord
+end

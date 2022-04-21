@@ -1,0 +1,2 @@
+class CardfishsController < ApplicationController
+end
