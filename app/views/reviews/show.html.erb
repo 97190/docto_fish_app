@@ -1,0 +1,26 @@
+<h1><%= @review.title %></h1>
+
+<p><%= @review.body %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_article_path(@review) %></li>
+  <li><%= link_to "Destroy", article_path(@review), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>
+
+<h2>Add a comment:</h2>
+<%= form_with model: [ @review, @review.comments.build ] do |form| %>
+  <p>
+    <%= form.label :commenter %><br>
+    <%= form.text_field :commenter %>
+  </p>
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

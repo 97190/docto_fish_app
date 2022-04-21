@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'dashboard', to: 'pages#dashboard'
   get 'cards_fishs', to: 'cards_fishs#index'
   get 'blog', to: 'pages#blog'
-
+  get 'reviews', to: 'reviews#show'
   # get 'signup', to: 'users#new', as: 'signup'
   # get 'login', to: 'sessions#new', as: 'login'
   # get 'logout', to: 'sessions#destroy', as: 'logout'
