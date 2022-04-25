@@ -5,6 +5,16 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'faker'
+100.times do
+  CardFishs.create([{
+    name: Faker::Creature::Animal.name
+    description: Faker::Demographic.race
+    maladie: Faker::Quotes::Shakespeare.romeo_and_juliet_quote
+  }])
+
+end
+
 puts "create card fishs"
 fishs1 = Fish.create! (
 name: 'Poisson pterophyllum scalare (scalaire)',
