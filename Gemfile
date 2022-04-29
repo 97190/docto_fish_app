@@ -37,6 +37,9 @@ gem 'bootstrap-sass', '~> 3.4.1'
 # Jquery-rails
 gem 'jquery-rails'
 
+# Cloudinary
+gem "cloudinary"
+
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
