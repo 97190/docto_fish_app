@@ -8,11 +8,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="#">Nos services</a>
-        <a class="nav-link" href="#">Blog et actualités</a>
-        <a class="nav-link" href="#">Connexion</a>
-        <a class="nav-link" href="#">Créer mon compte</a>
-        <a class="nav-link" href="#">Déconnexion</a>
+        <%= link_to "Nos services", service_path(@service) %>
+        <%= link_to "Blog et actualités", blog_path(@blog) %>
+        <%= link_to "Connexion", new_user_session_path  %>
+        <%= link_to "Créer mon compte", new_user_registration_path %>
+        <%= link_to "Déconnexion", destroy_user_session_path %>
         <a class="nav-link disabled">Disabled</a>
       </div>
     </div>
