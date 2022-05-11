@@ -1,5 +1,12 @@
+@import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+@import "styles";
+@import "custom";
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
 
 .docto-fish-title {
   font-family: 'Playfair Display', serif;
