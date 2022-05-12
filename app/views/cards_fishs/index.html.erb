@@ -1,11 +1,12 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
+  <%= CardFish.all.each do |f| %>
   <div class="col">
     <div class="card h-100">
-        <%# <%= image_tag ('images.png') %> 
+        <%# <%= image_tag ('images.png') %>
         <img src="assets/chambre.JPG" alt='icon' />
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title"><%= f.name %></h5>
+        <p class="card-text"><%= f.description %></p>
         <ul class="list-group list-group-flush">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
@@ -45,4 +46,5 @@
       </div>
     </div>
   </div>
+  <% end %>
 </div>
