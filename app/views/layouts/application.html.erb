@@ -4,6 +4,10 @@
     <title>DoctoFishApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", media: "all", "data-turbo-track" => "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track" => "reload" %>
+
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
@@ -16,17 +20,16 @@
   <%# <%= link_to "Sign Up",  new_user_registration_path %>
   <%# <%= link_to "Log In", new_user_session_path  %>
 <% end %>
-  <%# <nav> %>
-  <%# <h2>navbar</h2> <!-- Add this -->
 
-    </nav> %>
   </header>
   <%= render 'layouts/navigation' %>
 
   <body>
+    <script src="script.js"></script>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
     <p>Build footer here</p> <!-- Add this -->
+
   </body>
 </html>

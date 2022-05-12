@@ -9,3 +9,5 @@ window.Stimulus   = application
 export { application }
 //= require jquery
 //= require bootstrap-sprockets
+//= require turbolinks
+//= require_tree .
